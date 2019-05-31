@@ -69,22 +69,7 @@
 <!--   -->
 </a></div>
 <!-- ========= END OF TOP NAVBAR ========= -->
-<div class="contentContainer"><a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a name="I:B">
-<!--   -->
-</a>
-<h2 class="title">B</h2>
-<dl>
-<dt><a href="com/github/crashdemons/mobeggdrops/events/BlockDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events"><span class="typeNameLink">BlockDropHeadEvent</span></a> - Class in <a href="com/github/crashdemons/mobeggdrops/events/package-summary.html">com.github.crashdemons.mobeggdrops.events</a></dt>
-<dd>
-<div class="block">Event created by the PlayerHeads plugin when a block is broken by hand
- (mined) and dropping a head.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/BlockDropHeadEvent.html#BlockDropHeadEvent-org.bukkit.block.Block-org.bukkit.inventory.ItemStack-">BlockDropHeadEvent(Block, ItemStack)</a></span> - Constructor for class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/BlockDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">BlockDropHeadEvent</a></dt>
-<dd>
-<div class="block">Construct the event</div>
-</dd>
-</dl>
-<a name="I:C">
+<div class="contentContainer"><a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;<a name="I:C">
 <!--   -->
 </a>
 <h2 class="title">C</h2>
@@ -97,22 +82,9 @@
 <dd>
 <div class="block">Package containing the PlayerHeads API specification</div>
 </dd>
-<dt><a href="com/github/crashdemons/mobeggdrops/compatibility/package-summary.html">com.github.crashdemons.mobeggdrops.compatibility</a> - package com.github.crashdemons.mobeggdrops.compatibility</dt>
-<dd>
-<div class="block">Package supplying cross-version compiling compatibility to the plugin.</div>
-</dd>
-<dt><a href="com/github/crashdemons/mobeggdrops/compatibility/plugins/package-summary.html">com.github.crashdemons.mobeggdrops.compatibility.plugins</a> - package com.github.crashdemons.mobeggdrops.compatibility.plugins</dt>
-<dd>
-<div class="block">Package supplying inter-plugin compatibility and events to the plugin.</div>
-</dd>
 <dt><a href="com/github/crashdemons/mobeggdrops/events/package-summary.html">com.github.crashdemons.mobeggdrops.events</a> - package com.github.crashdemons.mobeggdrops.events</dt>
 <dd>
 <div class="block">Defines events created by the PlayerHeads plugin, including beheadings.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html#createItemStack-int-">createItemStack(int)</a></span> - Method in interface com.github.crashdemons.mobeggdrops.compatibility.<a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html" title="interface in com.github.crashdemons.mobeggdrops.compatibility">SkullDetails</a></dt>
-<dd>
-<div class="block">Create an ItemStack of a given quantity for this specific skull
- implementation.</div>
 </dd>
 </dl>
 <a name="I:D">
@@ -120,7 +92,7 @@
 </a>
 <h2 class="title">D</h2>
 <dl>
-<dt><a href="com/github/crashdemons/mobeggdrops/events/DropHeadEvent.html" title="interface in com.github.crashdemons.mobeggdrops.events"><span class="typeNameLink">DropHeadEvent</span></a> - Interface in <a href="com/github/crashdemons/mobeggdrops/events/package-summary.html">com.github.crashdemons.mobeggdrops.events</a></dt>
+<dt><a href="com/github/crashdemons/mobeggdrops/events/DropEggEvent.html" title="interface in com.github.crashdemons.mobeggdrops.events"><span class="typeNameLink">DropEggEvent</span></a> - Interface in <a href="com/github/crashdemons/mobeggdrops/events/package-summary.html">com.github.crashdemons.mobeggdrops.events</a></dt>
 <dd>
 <div class="block">Interface for events that drop a plugin-supported head.</div>
 </dd>
@@ -130,27 +102,22 @@
 </a>
 <h2 class="title">E</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/HeadType.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/HeadType.html" title="interface in com.github.crashdemons.mobeggdrops.api">HeadType</a></dt>
+<dt><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events"><span class="typeNameLink">EggRollEvent</span></a> - Class in <a href="com/github/crashdemons/mobeggdrops/events/package-summary.html">com.github.crashdemons.mobeggdrops.events</a></dt>
+<dd>
+<div class="block">Event created by PlayerHeads (4.9.2+) to indicate that a head dropchance roll
+ has occurred and the success/failure has been determined.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#EggRollEvent-org.bukkit.entity.Entity-org.bukkit.entity.Entity-boolean-double-double-double-double-double-boolean-">EggRollEvent(Entity, Entity, boolean, double, double, double, double, double, boolean)</a></span> - Constructor for class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
+<dd>
+<div class="block">Creates the Head dropchance event for PlayerHeads.</div>
+</dd>
+<dt><a href="com/github/crashdemons/mobeggdrops/api/EggType.html" title="interface in com.github.crashdemons.mobeggdrops.api"><span class="typeNameLink">EggType</span></a> - Interface in <a href="com/github/crashdemons/mobeggdrops/api/package-summary.html">com.github.crashdemons.mobeggdrops.api</a></dt>
+<dd>
+<div class="block">Object representing the type of Head supported by PlayerHeads.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/EggType.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/EggType.html" title="interface in com.github.crashdemons.mobeggdrops.api">EggType</a></dt>
 <dd>
 <div class="block">Determine if this headtype is the same as another.</div>
-</dd>
-</dl>
-<a name="I:F">
-<!--   -->
-</a>
-<h2 class="title">F</h2>
-<dl>
-<dt><a href="com/github/crashdemons/mobeggdrops/events/FakeBlockBreakEvent.html" title="class in com.github.crashdemons.mobeggdrops.events"><span class="typeNameLink">FakeBlockBreakEvent</span></a> - Class in <a href="com/github/crashdemons/mobeggdrops/events/package-summary.html">com.github.crashdemons.mobeggdrops.events</a></dt>
-<dd>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>
-<div class="block"><span class="deprecationComment">you should use SimulatedBlockBreakEvent instead, this class may
- be removed in the future</span></div>
-</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/FakeBlockBreakEvent.html#FakeBlockBreakEvent-org.bukkit.block.Block-org.bukkit.entity.Player-">FakeBlockBreakEvent(Block, Player)</a></span> - Constructor for class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/FakeBlockBreakEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">FakeBlockBreakEvent</a></dt>
-<dd>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
-<div class="block">Constructs a simulated block break event</div>
 </dd>
 </dl>
 <a name="I:G">
@@ -158,97 +125,48 @@
 </a>
 <h2 class="title">G</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/PlayerHeads.html#getApiInstance--">getApiInstance()</a></span> - Static method in class com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/PlayerHeads.html" title="class in com.github.crashdemons.mobeggdrops.api">PlayerHeads</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/MobEggDrops.html#getApiInstance--">getApiInstance()</a></span> - Static method in class com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/MobEggDrops.html" title="class in com.github.crashdemons.mobeggdrops.api">MobEggDrops</a></dt>
 <dd>
 <div class="block">Gets the instance of the PlayerHeads API</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/HeadType.html#getDisplayName--">getDisplayName()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/HeadType.html" title="interface in com.github.crashdemons.mobeggdrops.api">HeadType</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/EggType.html#getDisplayName--">getDisplayName()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/EggType.html" title="interface in com.github.crashdemons.mobeggdrops.api">EggType</a></dt>
 <dd>
 <div class="block">Gets the item displayname for the associated skulltype, as defined in the
  "lang" file.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/BlockDropHeadEvent.html#getDrop--">getDrop()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/BlockDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">BlockDropHeadEvent</a></dt>
-<dd>
-<div class="block">Gets the item that will drop from the beheading.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/DropHeadEvent.html#getDrop--">getDrop()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/DropHeadEvent.html" title="interface in com.github.crashdemons.mobeggdrops.events">DropHeadEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/DropEggEvent.html#getDrop--">getDrop()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/DropEggEvent.html" title="interface in com.github.crashdemons.mobeggdrops.events">DropEggEvent</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropHeadEvent.html#getDrop--">getDrop()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">LivingEntityDropHeadEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropEggEvent.html#getDrop--">getDrop()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropEggEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">LivingEntityDropEggEvent</a></dt>
 <dd>
 <div class="block">Gets the item that will drop from the beheading.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#getDropSuccess--">getDropSuccess()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#getDropSuccess--">getDropSuccess()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
 <dd>
 <div class="block">Whether the effective drop roll was determined to be a success.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#getEffectiveDropRate--">getEffectiveDropRate()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#getEffectiveDropRate--">getEffectiveDropRate()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
 <dd>
 <div class="block">Gets the configured droprate for the target as a fractional probability,
  after modification by looting.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#getEffectiveDropRoll--">getEffectiveDropRoll()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#getEffectiveDropRoll--">getEffectiveDropRoll()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
 <dd>
 <div class="block">Gets the effective drop roll value after modification by PlayerHeads.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropHeadEvent.html#getEntity--">getEntity()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">LivingEntityDropHeadEvent</a></dt>
-<dd>
-<div class="block">Gets the entity that was beheaded</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/PlayerDropHeadEvent.html#getEntity--">getEntity()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/PlayerDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">PlayerDropHeadEvent</a></dt>
-<dd>
-<div class="block">Gets the player that was beheaded.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html#getFloorMaterial--">getFloorMaterial()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.compatibility.<a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html" title="interface in com.github.crashdemons.mobeggdrops.compatibility">SkullDetails</a></dt>
-<dd>
-<div class="block">Gets the bukkit material corresponding to a block of this skull placed on
- a floor (not against a wall)</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/BlockDropHeadEvent.html#getHandlerList--">getHandlerList()</a></span> - Static method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/BlockDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">BlockDropHeadEvent</a></dt>
-<dd>
-<div class="block">Get a list of handlers for the event.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#getHandlerList--">getHandlerList()</a></span> - Static method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
-<dd>
-<div class="block">Get a list of handlers for the event.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropHeadEvent.html#getHandlerList--">getHandlerList()</a></span> - Static method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">LivingEntityDropHeadEvent</a></dt>
-<dd>
-<div class="block">Get a list of handlers for the event.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/BlockDropHeadEvent.html#getHandlers--">getHandlers()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/BlockDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">BlockDropHeadEvent</a></dt>
-<dd>
-<div class="block">Get a list of handlers for the event.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#getHandlers--">getHandlers()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
-<dd>
-<div class="block">Get a list of handlers for the event.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropHeadEvent.html#getHandlers--">getHandlers()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">LivingEntityDropHeadEvent</a></dt>
-<dd>
-<div class="block">Get a list of handlers for the event.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html#getHeadDrop-org.bukkit.entity.Entity-">getHeadDrop(Entity)</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">PlayerHeadsAPI</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/MobEggDropsAPI.html#getEggDrop-org.bukkit.entity.Entity-">getEggDrop(Entity)</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/MobEggDropsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">MobEggDropsAPI</a></dt>
 <dd>
 <div class="block">Gets a stack of head items as they would normally be dropped from the
  given entity.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html#getHeadFrom-org.bukkit.inventory.ItemStack-">getHeadFrom(ItemStack)</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">PlayerHeadsAPI</a></dt>
-<dd>
-<div class="block">Gets the type of head associated with an itemstack.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html#getHeadFrom-org.bukkit.block.BlockState-">getHeadFrom(BlockState)</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">PlayerHeadsAPI</a></dt>
-<dd>
-<div class="block">Gets the type of head associated with the Block</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html#getHeadItem-com.github.crashdemons.mobeggdrops.api.HeadType-int-">getHeadItem(HeadType, int)</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">PlayerHeadsAPI</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/MobEggDropsAPI.html#getEggItem-com.github.crashdemons.mobeggdrops.api.EggType-int-">getEggItem(EggType, int)</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/MobEggDropsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">MobEggDropsAPI</a></dt>
 <dd>
 <div class="block">Gets a stack of head items for the given type and amount.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html#getHeadOf-org.bukkit.entity.Entity-">getHeadOf(Entity)</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">PlayerHeadsAPI</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/MobEggDropsAPI.html#getEggOf-org.bukkit.entity.Entity-">getEggOf(Entity)</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/MobEggDropsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">MobEggDropsAPI</a></dt>
 <dd>
 <div class="block">Gets the type of head associated with an entity</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html#getHeadOf-org.bukkit.entity.EntityType-">getHeadOf(EntityType)</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">PlayerHeadsAPI</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/MobEggDropsAPI.html#getEggOf-org.bukkit.entity.EntityType-">getEggOf(EntityType)</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/MobEggDropsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">MobEggDropsAPI</a></dt>
 <dd>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>
 <div class="block"><span class="deprecationComment">this may not do exactly what you want because between MC
@@ -256,67 +174,69 @@
  entity-type. Using this method will introduce version-dependent behavior
  (For example: this may not be able to tell a stray from a skeleton in
  certain server versions) and should be avoided by using
- getHeadFrom(Entity) instead.</span></div>
+ getEggFrom(Entity) instead.</span></div>
 </div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/HeadType.html#getImplementationDetails--">getImplementationDetails()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/HeadType.html" title="interface in com.github.crashdemons.mobeggdrops.api">HeadType</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropEggEvent.html#getEntity--">getEntity()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropEggEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">LivingEntityDropEggEvent</a></dt>
 <dd>
-<div class="block">Get the underlying bukkit implementation details for the head on this
- server version.</div>
+<div class="block">Gets the entity that was beheaded</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html#getItemMaterial--">getItemMaterial()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.compatibility.<a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html" title="interface in com.github.crashdemons.mobeggdrops.compatibility">SkullDetails</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#getHandlerList--">getHandlerList()</a></span> - Static method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
 <dd>
-<div class="block">Gets the bukkit material corresponding to an Item of this skull</div>
+<div class="block">Get a list of handlers for the event.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#getKiller--">getKiller()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropEggEvent.html#getHandlerList--">getHandlerList()</a></span> - Static method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropEggEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">LivingEntityDropEggEvent</a></dt>
+<dd>
+<div class="block">Get a list of handlers for the event.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#getHandlers--">getHandlers()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
+<dd>
+<div class="block">Get a list of handlers for the event.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropEggEvent.html#getHandlers--">getHandlers()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropEggEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">LivingEntityDropEggEvent</a></dt>
+<dd>
+<div class="block">Get a list of handlers for the event.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#getKiller--">getKiller()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
 <dd>
 <div class="block">Get the Killer's entity that may have done the beheading.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#getKillerAlwaysBeheads--">getKillerAlwaysBeheads()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#getKillerAlwaysBeheads--">getKillerAlwaysBeheads()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
 <dd>
 <div class="block">Gets whether the killer was configured to always behead this type of
  target.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#getLootingModifier--">getLootingModifier()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#getLootingModifier--">getLootingModifier()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
 <dd>
 <div class="block">Gets the looting modifier (multiplier) that modified the effective
  droprate.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#getOriginalDropRate--">getOriginalDropRate()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/EggType.html#getMaterial--">getMaterial()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/EggType.html" title="interface in com.github.crashdemons.mobeggdrops.api">EggType</a></dt>
+<dd>
+<div class="block">Get the underlying bukkit implementation details for the head on this
+ server version.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#getOriginalDropRate--">getOriginalDropRate()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
 <dd>
 <div class="block">Gets the configured droprate for the target as a fractional probability,
  unmodified.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#getOriginalDropRoll--">getOriginalDropRoll()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#getOriginalDropRoll--">getOriginalDropRoll()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
 <dd>
 <div class="block">Gets the original PRNG-generated random value of the drop roll, uniform
  between 0 and 1 inclusively.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/HeadType.html#getOwner--">getOwner()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/HeadType.html" title="interface in com.github.crashdemons.mobeggdrops.api">HeadType</a></dt>
-<dd>
-<div class="block">Get the UUID associated with the skulltype (randomly assigned to it
- specifically)</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html#getPlugin--">getPlugin()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">PlayerHeadsAPI</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/MobEggDropsAPI.html#getPlugin--">getPlugin()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/MobEggDropsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">MobEggDropsAPI</a></dt>
 <dd>
 <div class="block">Get the main PlayerHeads Plugin instance</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#getTarget--">getTarget()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#getTarget--">getTarget()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
 <dd>
 <div class="block">Get the Target's entity that may have been beheaded</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/HeadType.html#getTexture--">getTexture()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/HeadType.html" title="interface in com.github.crashdemons.mobeggdrops.api">HeadType</a></dt>
-<dd>
-<div class="block">Get the Base64-encoded texture string associated with the skulltype</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html#getVersion--">getVersion()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">PlayerHeadsAPI</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/MobEggDropsAPI.html#getVersion--">getVersion()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/MobEggDropsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api">MobEggDropsAPI</a></dt>
 <dd>
 <div class="block">Get the version of the PlayerHeads plugin in use</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html#getWallMaterial--">getWallMaterial()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.compatibility.<a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html" title="interface in com.github.crashdemons.mobeggdrops.compatibility">SkullDetails</a></dt>
-<dd>
-<div class="block">Gets the bukkit material corresponding to a block of this skull placed
- against a wall (not on a floor or other placement)</div>
 </dd>
 </dl>
 <a name="I:H">
@@ -324,57 +244,17 @@
 </a>
 <h2 class="title">H</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/HeadType.html#hashCode--">hashCode()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/HeadType.html" title="interface in com.github.crashdemons.mobeggdrops.api">HeadType</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/EggType.html#hashCode--">hashCode()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/EggType.html" title="interface in com.github.crashdemons.mobeggdrops.api">EggType</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events"><span class="typeNameLink">HeadRollEvent</span></a> - Class in <a href="com/github/crashdemons/mobeggdrops/events/package-summary.html">com.github.crashdemons.mobeggdrops.events</a></dt>
-<dd>
-<div class="block">Event created by PlayerHeads (4.9.2+) to indicate that a head dropchance roll
- has occurred and the success/failure has been determined.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#HeadRollEvent-org.bukkit.entity.Entity-org.bukkit.entity.Entity-boolean-double-double-double-double-double-boolean-">HeadRollEvent(Entity, Entity, boolean, double, double, double, double, double, boolean)</a></span> - Constructor for class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
-<dd>
-<div class="block">Creates the Head dropchance event for PlayerHeads.</div>
-</dd>
-<dt><a href="com/github/crashdemons/mobeggdrops/api/HeadType.html" title="interface in com.github.crashdemons.mobeggdrops.api"><span class="typeNameLink">HeadType</span></a> - Interface in <a href="com/github/crashdemons/mobeggdrops/api/package-summary.html">com.github.crashdemons.mobeggdrops.api</a></dt>
-<dd>
-<div class="block">Object representing the type of Head supported by PlayerHeads.</div>
-</dd>
 </dl>
 <a name="I:I">
 <!--   -->
 </a>
 <h2 class="title">I</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html#isBackedByPlayerhead--">isBackedByPlayerhead()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.compatibility.<a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html" title="interface in com.github.crashdemons.mobeggdrops.compatibility">SkullDetails</a></dt>
-<dd>
-<div class="block">Gets whether the skull must be implemented with a playerhead</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/BlockDropHeadEvent.html#isCancelled--">isCancelled()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/BlockDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">BlockDropHeadEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropEggEvent.html#isCancelled--">isCancelled()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropEggEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">LivingEntityDropEggEvent</a></dt>
 <dd>
 <div class="block">Whether the event has been cancelled.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropHeadEvent.html#isCancelled--">isCancelled()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">LivingEntityDropHeadEvent</a></dt>
-<dd>
-<div class="block">Whether the event has been cancelled.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/HeadType.html#isPlayerHead--">isPlayerHead()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/HeadType.html" title="interface in com.github.crashdemons.mobeggdrops.api">HeadType</a></dt>
-<dd>
-<div class="block">Checks whether the skulltype uses a playerhead internally.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html#isSkinnable--">isSkinnable()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.compatibility.<a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html" title="interface in com.github.crashdemons.mobeggdrops.compatibility">SkullDetails</a></dt>
-<dd>
-<div class="block">Gets whether this skull, as implemented, is texturable or
- username-skinnable.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/HeadType.html#isVanilla--">isVanilla()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/HeadType.html" title="interface in com.github.crashdemons.mobeggdrops.api">HeadType</a></dt>
-<dd>
-<div class="block">Determines if a head of this type is implemented with a vanilla mob head
- or not [for the current server version].</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html#isVariant--">isVariant()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.compatibility.<a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html" title="interface in com.github.crashdemons.mobeggdrops.compatibility">SkullDetails</a></dt>
-<dd>
-<div class="block">Gets whether the skull is a variant type (legacy heads based on skeleton
- skull variants).</div>
 </dd>
 </dl>
 <a name="I:L">
@@ -382,7 +262,7 @@
 </a>
 <h2 class="title">L</h2>
 <dl>
-<dt><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events"><span class="typeNameLink">LivingEntityDropHeadEvent</span></a> - Class in <a href="com/github/crashdemons/mobeggdrops/events/package-summary.html">com.github.crashdemons.mobeggdrops.events</a></dt>
+<dt><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropEggEvent.html" title="class in com.github.crashdemons.mobeggdrops.events"><span class="typeNameLink">LivingEntityDropEggEvent</span></a> - Class in <a href="com/github/crashdemons/mobeggdrops/events/package-summary.html">com.github.crashdemons.mobeggdrops.events</a></dt>
 <dd>
 <div class="block">Event created by the PlayerHeads plugin when a [living] entity is beheaded.</div>
 </dd>
@@ -392,39 +272,25 @@
 </a>
 <h2 class="title">M</h2>
 <dl>
-<dt><a href="com/github/crashdemons/mobeggdrops/events/MobDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events"><span class="typeNameLink">MobDropHeadEvent</span></a> - Class in <a href="com/github/crashdemons/mobeggdrops/events/package-summary.html">com.github.crashdemons.mobeggdrops.events</a></dt>
+<dt><a href="com/github/crashdemons/mobeggdrops/events/MobDropEggEvent.html" title="class in com.github.crashdemons.mobeggdrops.events"><span class="typeNameLink">MobDropEggEvent</span></a> - Class in <a href="com/github/crashdemons/mobeggdrops/events/package-summary.html">com.github.crashdemons.mobeggdrops.events</a></dt>
 <dd>
 <div class="block">Event created by the PlayerHeads plugin when a Mob is beheaded.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/MobDropHeadEvent.html#MobDropHeadEvent-org.bukkit.entity.LivingEntity-org.bukkit.inventory.ItemStack-">MobDropHeadEvent(LivingEntity, ItemStack)</a></span> - Constructor for class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/MobDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">MobDropHeadEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/MobDropEggEvent.html#MobDropEggEvent-org.bukkit.entity.LivingEntity-org.bukkit.inventory.ItemStack-">MobDropEggEvent(LivingEntity, ItemStack)</a></span> - Constructor for class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/MobDropEggEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">MobDropEggEvent</a></dt>
 <dd>
 <div class="block">Constructs the event</div>
+</dd>
+<dt><a href="com/github/crashdemons/mobeggdrops/api/MobEggDrops.html" title="class in com.github.crashdemons.mobeggdrops.api"><span class="typeNameLink">MobEggDrops</span></a> - Class in <a href="com/github/crashdemons/mobeggdrops/api/package-summary.html">com.github.crashdemons.mobeggdrops.api</a></dt>
+<dd>
+<div class="block">PlayerHeads class for managing API provisions.</div>
+</dd>
+<dt><a href="com/github/crashdemons/mobeggdrops/api/MobEggDropsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api"><span class="typeNameLink">MobEggDropsAPI</span></a> - Interface in <a href="com/github/crashdemons/mobeggdrops/api/package-summary.html">com.github.crashdemons.mobeggdrops.api</a></dt>
+<dd>
+<div class="block">Interface for the PlayerHeads API.</div>
 </dd>
 <dt><a href="com/github/crashdemons/mobeggdrops/MobEggDropsPlugin.html" title="interface in com.github.crashdemons.mobeggdrops"><span class="typeNameLink">MobEggDropsPlugin</span></a> - Interface in <a href="com/github/crashdemons/mobeggdrops/package-summary.html">com.github.crashdemons.mobeggdrops</a></dt>
 <dd>
 <div class="block">Interface representing the PlayerHeads plugin class object</div>
-</dd>
-</dl>
-<a name="I:P">
-<!--   -->
-</a>
-<h2 class="title">P</h2>
-<dl>
-<dt><a href="com/github/crashdemons/mobeggdrops/events/PlayerDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events"><span class="typeNameLink">PlayerDropHeadEvent</span></a> - Class in <a href="com/github/crashdemons/mobeggdrops/events/package-summary.html">com.github.crashdemons.mobeggdrops.events</a></dt>
-<dd>
-<div class="block">Event created by the PlayerHeads plugin when a Player is beheaded.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/PlayerDropHeadEvent.html#PlayerDropHeadEvent-org.bukkit.entity.Player-org.bukkit.inventory.ItemStack-">PlayerDropHeadEvent(Player, ItemStack)</a></span> - Constructor for class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/PlayerDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">PlayerDropHeadEvent</a></dt>
-<dd>
-<div class="block">Constructs the event</div>
-</dd>
-<dt><a href="com/github/crashdemons/mobeggdrops/api/PlayerHeads.html" title="class in com.github.crashdemons.mobeggdrops.api"><span class="typeNameLink">PlayerHeads</span></a> - Class in <a href="com/github/crashdemons/mobeggdrops/api/package-summary.html">com.github.crashdemons.mobeggdrops.api</a></dt>
-<dd>
-<div class="block">PlayerHeads class for managing API provisions.</div>
-</dd>
-<dt><a href="com/github/crashdemons/mobeggdrops/api/PlayerHeadsAPI.html" title="interface in com.github.crashdemons.mobeggdrops.api"><span class="typeNameLink">PlayerHeadsAPI</span></a> - Interface in <a href="com/github/crashdemons/mobeggdrops/api/package-summary.html">com.github.crashdemons.mobeggdrops.api</a></dt>
-<dd>
-<div class="block">Interface for the PlayerHeads API.</div>
 </dd>
 </dl>
 <a name="I:S">
@@ -432,39 +298,21 @@
 </a>
 <h2 class="title">S</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/PlayerHeads.html#setApiInstance-com.github.crashdemons.mobeggdrops.api.PlayerHeadsAPI-">setApiInstance(PlayerHeadsAPI)</a></span> - Static method in class com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/PlayerHeads.html" title="class in com.github.crashdemons.mobeggdrops.api">PlayerHeads</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/MobEggDrops.html#setApiInstance-com.github.crashdemons.mobeggdrops.api.MobEggDropsAPI-">setApiInstance(MobEggDropsAPI)</a></span> - Static method in class com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/MobEggDrops.html" title="class in com.github.crashdemons.mobeggdrops.api">MobEggDrops</a></dt>
 <dd>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>
 <div class="block"><span class="deprecationComment">This method is intended only for internal PlayerHeads use.</span></div>
 </div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/BlockDropHeadEvent.html#setCancelled-boolean-">setCancelled(boolean)</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/BlockDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">BlockDropHeadEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropEggEvent.html#setCancelled-boolean-">setCancelled(boolean)</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropEggEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">LivingEntityDropEggEvent</a></dt>
 <dd>
 <div class="block">Sets whether the event should be cancelled.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropHeadEvent.html#setCancelled-boolean-">setCancelled(boolean)</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/LivingEntityDropHeadEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">LivingEntityDropHeadEvent</a></dt>
-<dd>
-<div class="block">Sets whether the event should be cancelled.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#setDropSuccess-boolean-">setDropSuccess(boolean)</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#setDropSuccess-boolean-">setDropSuccess(boolean)</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
 <dd>
 <div class="block">Sets whether the drop roll should be considered a success.</div>
 </dd>
-<dt><a href="com/github/crashdemons/mobeggdrops/compatibility/plugins/SimulatedBlockBreakEvent.html" title="class in com.github.crashdemons.mobeggdrops.compatibility.plugins"><span class="typeNameLink">SimulatedBlockBreakEvent</span></a> - Class in <a href="com/github/crashdemons/mobeggdrops/compatibility/plugins/package-summary.html">com.github.crashdemons.mobeggdrops.compatibility.plugins</a></dt>
-<dd>
-<div class="block">Event used internally by the plugin to detect if a hypothetical BlockBreak
- would be cancelled by another plugin.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/compatibility/plugins/SimulatedBlockBreakEvent.html#SimulatedBlockBreakEvent-org.bukkit.block.Block-org.bukkit.entity.Player-">SimulatedBlockBreakEvent(Block, Player)</a></span> - Constructor for class com.github.crashdemons.mobeggdrops.compatibility.plugins.<a href="com/github/crashdemons/mobeggdrops/compatibility/plugins/SimulatedBlockBreakEvent.html" title="class in com.github.crashdemons.mobeggdrops.compatibility.plugins">SimulatedBlockBreakEvent</a></dt>
-<dd>
-<div class="block">Constructs a simulated block break event</div>
-</dd>
-<dt><a href="com/github/crashdemons/mobeggdrops/compatibility/SkullDetails.html" title="interface in com.github.crashdemons.mobeggdrops.compatibility"><span class="typeNameLink">SkullDetails</span></a> - Interface in <a href="com/github/crashdemons/mobeggdrops/compatibility/package-summary.html">com.github.crashdemons.mobeggdrops.compatibility</a></dt>
-<dd>
-<div class="block">Defines an interface of implementation-specific details and methods relating
- to a skull item/block.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html#succeeded--">succeeded()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/HeadRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">HeadRollEvent</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html#succeeded--">succeeded()</a></span> - Method in class com.github.crashdemons.mobeggdrops.events.<a href="com/github/crashdemons/mobeggdrops/events/EggRollEvent.html" title="class in com.github.crashdemons.mobeggdrops.events">EggRollEvent</a></dt>
 <dd>
 <div class="block">Whether the effective drop roll was determined to be a success.</div>
 </dd>
@@ -474,12 +322,12 @@
 </a>
 <h2 class="title">T</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/HeadType.html#toEnum--">toEnum()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/HeadType.html" title="interface in com.github.crashdemons.mobeggdrops.api">HeadType</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/crashdemons/mobeggdrops/api/EggType.html#toEnum--">toEnum()</a></span> - Method in interface com.github.crashdemons.mobeggdrops.api.<a href="com/github/crashdemons/mobeggdrops/api/EggType.html" title="interface in com.github.crashdemons.mobeggdrops.api">EggType</a></dt>
 <dd>
 <div class="block">Return the associated Enum value for the HeadType</div>
 </dd>
 </dl>
-<a href="#I:B">B</a>&nbsp;<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:F">F</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:P">P</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;</div>
+<a href="#I:C">C</a>&nbsp;<a href="#I:D">D</a>&nbsp;<a href="#I:E">E</a>&nbsp;<a href="#I:G">G</a>&nbsp;<a href="#I:H">H</a>&nbsp;<a href="#I:I">I</a>&nbsp;<a href="#I:L">L</a>&nbsp;<a href="#I:M">M</a>&nbsp;<a href="#I:S">S</a>&nbsp;<a href="#I:T">T</a>&nbsp;</div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">
 <!--   -->

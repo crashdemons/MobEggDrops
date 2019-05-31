@@ -4,7 +4,7 @@
 
 package org.shininet.bukkit.mobeggdrops;
 
-import com.github.crashdemons.mobeggdrops.TexturedSkullType;
+import com.github.crashdemons.mobeggdrops.InternalEggType;
 import com.github.crashdemons.mobeggdrops.compatibility.RuntimeReferences;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -38,11 +38,9 @@ public final class Config {
     public static final Map<String, configType> configKeys = new HashMap<String, configType>() {
         {
             put("pkonly", configType.BOOLEAN);
-            put("droprate", configType.DOUBLE);
             put("lootingrate", configType.DOUBLE);
             put("mobpkonly", configType.BOOLEAN);
-            for (TexturedSkullType skullType : TexturedSkullType.values()) {
-                if(skullType==TexturedSkullType.PLAYER) continue;
+            for (InternalEggType skullType : InternalEggType.values()) {
                 put(skullType.getConfigName().toLowerCase(), configType.DOUBLE);
             }
             put("fixcase", configType.BOOLEAN);
@@ -52,10 +50,7 @@ public final class Config {
             put("broadcastmob", configType.BOOLEAN);
             put("broadcastmobrange", configType.INT);
             put("antideathchest", configType.BOOLEAN);
-            put("dropboringplayerheads", configType.BOOLEAN);
-            put("dropvanillaheads", configType.BOOLEAN);
-            put("convertvanillaheads", configType.BOOLEAN);
-            put("nerfdeathspam", configType.BOOLEAN);
+            
             put("addlore", configType.BOOLEAN);
             
             
@@ -64,11 +59,6 @@ public final class Config {
             
             put("considermobkillers", configType.BOOLEAN);     
               
-            put("clickspamcount", configType.INT);
-            put("clickspamthreshold", configType.LONG);
-            put("deathspamcount", configType.INT);
-            put("deathspamthreshold", configType.LONG);
-            put("fixdroppedheads",configType.BOOLEAN);
         }
     };
     /**
@@ -84,11 +74,11 @@ public final class Config {
     /**
      * String used to identify the plugin page on Curse (used in links)
      */
-    public static final String updateSlug = "player-heads";
+    public static final String updateSlug = "mobeggdrops";
     /**
      * The Project ID for the plugin on Curse (used by the updater)
      */
-    public static final int updateID = 46244;
+    public static final int updateID = -1;
     
     static String getValueDisplayString(FileConfiguration configFile, String key){
         Object configValue = configFile.get(key);

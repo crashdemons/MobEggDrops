@@ -5,7 +5,7 @@
  */
 package org.shininet.bukkit.mobeggdrops;
 
-import com.github.crashdemons.mobeggdrops.TexturedSkullType;
+import com.github.crashdemons.mobeggdrops.InternalEggType;
 import com.github.crashdemons.mobeggdrops.testutils.Mocks;
 import com.github.crashdemons.mobeggdrops.testutils.TestOutput;
 import java.io.File;
@@ -45,14 +45,15 @@ public class LangTest {
         FileInputStream resource = new FileInputStream(path+"/lang.properties");
         props.load(resource);
         
-        for (TexturedSkullType skullType : TexturedSkullType.values()) {
+        for (InternalEggType skullType : InternalEggType.values()) {
             String value;
-            value = props.getProperty("HEAD_"+skullType.name());
+            value = props.getProperty("EGG_"+skullType.name());
             if(value==null)
-                 fail("Head display name property not found for: "+skullType.name());
-            value = props.getProperty("HEAD_SPAWN_"+skullType.name());
+                out.println("Egg display name property not found for: "+skullType.name());
+                 //fail("Egg display name property not found for: "+skullType.name());
+            value = props.getProperty("EGG_SPAWN_"+skullType.name());
             if(value==null)
-                 fail("Head Spawn-name property not found for: "+skullType.name());
+                 fail("Egg Spawn-name property not found for: "+skullType.name());
         }
     }
     

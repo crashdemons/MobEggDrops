@@ -21,17 +21,6 @@ public class RuntimeReferencesTest {
     }
 
     @Test
-    public void testGetCompatibleMaterialByName_invalid() {
-        out.println("getCompatibleMaterialByName invalid");
-        assertEquals(null, RuntimeReferences.getCompatibleMaterialByName("EGG"));
-    }
-    @Test
-    public void testGetCompatibleMaterialByName_valid() {
-        out.println("getCompatibleMaterialByName valid");
-        assertEquals("CREEPER", RuntimeReferences.getCompatibleMaterialByName("CREEPER").name());
-    }
-
-    @Test
     public void testGetMaterialByName_invalid() {
         out.println("getMaterialByName invalid");
         assertEquals(null, RuntimeReferences.getMaterialByName("120usahbbd"));
@@ -42,17 +31,6 @@ public class RuntimeReferencesTest {
         assertEquals("STONE", RuntimeReferences.getMaterialByName("STONE").name());
     }
 
-    @Test
-    public void testGetSkullTypeByName_valid() {
-        out.println("getSkullTypeByName valid");
-        assertEquals("PLAYER", RuntimeReferences.getSkullTypeByName("PLAYER").name());
-    }
-
-    @Test
-    public void testGetSkullTypeByName_invalid() {
-        out.println("getSkullTypeByName invalid");
-        assertEquals(null, RuntimeReferences.getSkullTypeByName("3das9d8as"));
-    }
 
     @Test
     public void testHasClass_invalid() {

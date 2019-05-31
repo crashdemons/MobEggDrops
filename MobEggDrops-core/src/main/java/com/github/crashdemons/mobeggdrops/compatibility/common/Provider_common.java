@@ -5,17 +5,16 @@
  */
 package com.github.crashdemons.mobeggdrops.compatibility.common;
 
+import com.github.crashdemons.mobeggdrops.InternalEggType;
 import com.github.crashdemons.mobeggdrops.compatibility.CompatibilityProvider;
-import com.github.crashdemons.mobeggdrops.compatibility.SkullType;
+import com.github.crashdemons.mobeggdrops.compatibility.RuntimeReferences;
 import org.bukkit.Bukkit;
+import org.bukkit.Material;
 import org.bukkit.OfflinePlayer;
-import org.bukkit.block.BlockState;
-import org.bukkit.block.Skull;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Ocelot;
 import org.bukkit.entity.Tameable;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.SkullMeta;
 
 /**
  * CompatibilityProvider Implementation for 1.8-1.12.2 support.
@@ -24,58 +23,6 @@ import org.bukkit.inventory.meta.SkullMeta;
  */
 @SuppressWarnings("deprecation")
 public abstract class Provider_common implements CompatibilityProvider {
-
-    @Override
-    public String getOwnerDirect(SkullMeta skullItemMeta) {
-        return skullItemMeta.getOwner();
-    }
-
-    @Override
-    public String getOwnerDirect(Skull skullBlockState) {
-        return skullBlockState.getOwner();
-    }
-
-    @Override
-    public boolean setOwner(SkullMeta skullItemMeta, String owner) {
-        return skullItemMeta.setOwner(owner);
-    }
-
-    @Override
-    public boolean setOwner(Skull skullBlockState, String owner) {
-        return skullBlockState.setOwner(owner);
-    }
-
-    @Override
-    public boolean isHead(ItemStack s) {
-        return getSkullType(s) != null;
-    }
-
-    @Override
-    public boolean isHead(BlockState s) {
-        return getSkullType(s) != null;
-    }
-
-    @Override
-    public boolean isPlayerhead(ItemStack s) {
-        return getSkullType(s) == SkullType.PLAYER;
-    }
-
-    @Override
-    public boolean isPlayerhead(BlockState s) {
-        return getSkullType(s) == SkullType.PLAYER;
-    }
-
-    @Override
-    public boolean isMobhead(ItemStack s) {
-        SkullType t = getSkullType(s);
-        return (t != null && t != SkullType.PLAYER);
-    }
-
-    @Override
-    public boolean isMobhead(BlockState s) {
-        SkullType t = getSkullType(s);
-        return (t != null && t != SkullType.PLAYER);
-    }
 
     @Override
     public String getCompatibleNameFromEntity(Entity e) {
@@ -96,5 +43,47 @@ public abstract class Provider_common implements CompatibilityProvider {
         }
 
         return false;
+    }
+    
+    @Override
+    public Material getEffectiveCatEgg(){
+        Material mat = RuntimeReferences.getMaterialByName("CAT_SPAWN_EGG");
+        if(mat==null) mat = RuntimeReferences.getMaterialByName("OCELOT_SPAWN_EGG");
+        return mat;
+    }
+    
+    @Override
+    public Material getEggFromEntityType(EntityType type){
+        //System.out.println("getegg "+type.name());
+        switch(type){
+            case PIG_ZOMBIE:
+                return Material.ZOMBIE_PIGMAN_SPAWN_EGG;
+            case MUSHROOM_COW:
+                return Material.MOOSHROOM_SPAWN_EGG;
+        }
+        String eggname = type.name()+"_SPAWN_EGG";
+        Material mat = RuntimeReferences.getMaterialByName(eggname);
+        //if(mat==null && plugin!=null) plugin.getLogger().info("Missing spawn egg for: "+type.name());
+        return mat;
+    }
+    
+    @Override
+    public Material getEggFromEntity(Entity e){
+        if(isLegacyCat(e)) return getEffectiveCatEgg();
+        return getEggFromEntityType(e.getType());
+    }
+    
+    @Override
+    public InternalEggType getInternalEggFromEntityType(EntityType t){
+        try{
+            return InternalEggType.valueOf(t.name().toUpperCase());
+        }catch(Exception ex){
+            return null;
+        }
+    }
+    @Override
+    public InternalEggType getInternalEggFromEntity(Entity e){
+        if(isLegacyCat(e)) return InternalEggType.CAT;
+        return getInternalEggFromEntityType(e.getType());
     }
 }

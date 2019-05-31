@@ -5,10 +5,6 @@
  */
 package com.github.crashdemons.mobeggdrops.compatibility;
 
-import com.github.crashdemons.mobeggdrops.compatibility.plugins.NoCheatPlusCompatibility;
-import com.github.crashdemons.mobeggdrops.compatibility.plugins.ProtectionPluginCompatibility;
-import org.bukkit.block.Block;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
 /**
@@ -18,22 +14,8 @@ import org.bukkit.plugin.Plugin;
  */
 public final class CompatiblePlugins {
 
-    private CompatiblePlugins() {
-    }
-    /**
-     * NoCheatPlus compatibility class instance
-     *
-     * @see
-     * com.github.crashdemons.mobeggdrops.compatibility.plugins.NoCheatPlusCompatibility
-     */
-    public static NoCheatPlusCompatibility nocheatplus = null;
-    /**
-     * Generic protection-plugin compatibility class instance
-     *
-     * @see
-     * com.github.crashdemons.mobeggdrops.compatibility.plugins.ProtectionPluginCompatibility
-     */
-    public static ProtectionPluginCompatibility protection = null;
+    private CompatiblePlugins() {}
+
     private static boolean ready = false;
     private static Plugin parentPlugin = null;
 
@@ -46,36 +28,9 @@ public final class CompatiblePlugins {
      */
     public static void init(Plugin parentPluginInstance) {
         CompatiblePlugins.parentPlugin = parentPluginInstance;
-        nocheatplus = new NoCheatPlusCompatibility(parentPluginInstance);
-        protection = new ProtectionPluginCompatibility(parentPluginInstance);
         ready = true;
     }
 
-    /**
-     * Test of a simulated block break succeeds (considering all applicable
-     * plugin support classes).
-     * This method includes exempting fastbreak in NCP before testing.
-     *
-     * @param block the block being broken
-     * @param player the player doing the breaking
-     * @return whether the block break succeeded or failed (was cancelled).
-     */
-    public static boolean testBlockBreak(Block block, Player player) {
-        boolean isNotExempt = false;
-        if (nocheatplus.isPresent()) {
-            isNotExempt = !nocheatplus.isExemptFastbreak(player);
-            if (isNotExempt) {
-                nocheatplus.exemptFastbreak(player);
-            }
-        }
-
-        boolean blockBreakSucceeded = protection.testBlockBreak(block, player);
-
-        if (nocheatplus.isPresent() && isNotExempt) {
-            nocheatplus.unexemptFastbreak(player);
-        }
-        return blockBreakSucceeded;
-    }
 
     /**
      * Checks whether the plugin compatibility classes are ready for use.

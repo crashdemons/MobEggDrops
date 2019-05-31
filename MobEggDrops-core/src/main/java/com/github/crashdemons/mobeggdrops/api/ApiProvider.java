@@ -5,18 +5,15 @@
  */
 package com.github.crashdemons.mobeggdrops.api;
 
-import com.github.crashdemons.mobeggdrops.api.HeadType;
-import com.github.crashdemons.mobeggdrops.SkullConverter;
-import com.github.crashdemons.mobeggdrops.SkullManager;
-import com.github.crashdemons.mobeggdrops.TexturedSkullType;
-import org.bukkit.block.BlockState;
+import com.github.crashdemons.mobeggdrops.EggManager;
+import com.github.crashdemons.mobeggdrops.InternalEggType;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import org.shininet.bukkit.mobeggdrops.PlayerHeads;
+import org.shininet.bukkit.mobeggdrops.MobEggDrops;
 import com.github.crashdemons.mobeggdrops.MobEggDropsPlugin;
-import com.github.crashdemons.mobeggdrops.api.MobEggDropsAPI;
+import com.github.crashdemons.mobeggdrops.compatibility.Compatibility;
 
 /**
  * Implements the API by wrapping internal methods
@@ -25,10 +22,10 @@ import com.github.crashdemons.mobeggdrops.api.MobEggDropsAPI;
  */
 public class ApiProvider implements MobEggDropsAPI {
 
-    private final PlayerHeads plugin;
+    private final MobEggDrops plugin;
 
     public ApiProvider(MobEggDropsPlugin plugin) {
-        this.plugin = (PlayerHeads) plugin;
+        this.plugin = (MobEggDrops) plugin;
     }
 
     @Override
@@ -41,74 +38,43 @@ public class ApiProvider implements MobEggDropsAPI {
         return plugin.getDescription().getVersion();
     }
 
+
+
+
     @Override
-    public HeadType getHeadFrom(ItemStack s) {
-        return SkullConverter.skullTypeFromItemStack(s);
+    public EggType getEggOf(Entity e) {
+        return Compatibility.getProvider().getInternalEggFromEntity(e);
     }
 
     @Override
-    public HeadType getHeadFrom(BlockState s) {
-        return SkullConverter.skullTypeFromBlockState(s);
+    public EggType getEggOf(EntityType t) {
+
+        return Compatibility.getProvider().getInternalEggFromEntityType(t);
     }
 
     @Override
-    public HeadType getHeadOf(Entity e) {
-        return SkullConverter.skullTypeFromEntity(e);
-    }
-
-    @Override
-    public HeadType getHeadOf(EntityType t) {
-        try {
-            return TexturedSkullType.valueOf(t.name());
-        } catch (Exception e) {
-            return null;
-        }
-    }
-
-    @Override
-    public ItemStack getHeadItem(HeadType h, int num) {
-        TexturedSkullType type = headFromApiHead(h);
+    public ItemStack getEggItem(EggType h, int num) {
+        InternalEggType type = eggFromApiEgg(h);
         if (type == null) {
             return null;
         }
 
         boolean addLore = plugin.configFile.getBoolean("addlore");
-        boolean usevanillaskull = plugin.configFile.getBoolean("dropvanillaheads");
-        if (type == TexturedSkullType.PLAYER) {
-            return SkullManager.PlayerSkull(num, true);
-        }
-        return SkullManager.MobSkull(type, num, usevanillaskull, addLore);
+        return EggManager.MobEgg(type, num, true, addLore);
     }
 
     @Override
-    public ItemStack getHeadDrop(Entity e) {
-        TexturedSkullType type = SkullConverter.skullTypeFromEntity(e);
+    public ItemStack getEggDrop(Entity e) {
+        InternalEggType type = Compatibility.getProvider().getInternalEggFromEntity(e);
         if (type == null) {
             return null;
         }
         boolean addLore = plugin.configFile.getBoolean("addlore");
-        ItemStack drop;
-        if (e instanceof Player) {
-            Player player = (Player) e;
-            String skullOwner;
-            if (plugin.configFile.getBoolean("dropboringplayerheads")) {
-                skullOwner = "";
-            } else {
-                skullOwner = player.getName();
-            }
-            if (skullOwner == null || skullOwner.isEmpty()) {
-                drop = SkullManager.PlayerSkull(addLore);
-            } else {
-                drop = SkullManager.PlayerSkull(skullOwner, addLore);
-            }
-        } else {
-            boolean usevanillaskull = plugin.configFile.getBoolean("dropvanillaheads");
-            drop = SkullManager.MobSkull(type, usevanillaskull, addLore);
-        }
+        ItemStack drop = EggManager.MobEgg(type, true, addLore);
         return drop;
     }
 
-    private TexturedSkullType headFromApiHead(HeadType h) {
-        return TexturedSkullType.get(h.getOwner());
+    private InternalEggType eggFromApiEgg(EggType h) {
+        return (InternalEggType) h;
     }
 }

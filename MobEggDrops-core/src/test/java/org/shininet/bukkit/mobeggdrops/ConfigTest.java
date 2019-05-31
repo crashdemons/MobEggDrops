@@ -4,11 +4,9 @@
  *  file, You can obtain one at http://mozilla.org/MPL/2.0/ .
  */
 package org.shininet.bukkit.mobeggdrops;
-
-import org.shininet.bukkit.mobeggdrops.Config;
+import com.github.crashdemons.mobeggdrops.InternalEggType;
 import com.github.crashdemons.mobeggdrops.testutils.Mocks;
 import com.github.crashdemons.mobeggdrops.testutils.TestOutput;
-import com.github.crashdemons.mobeggdrops.TexturedSkullType;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -38,8 +36,7 @@ public class ConfigTest {
     @Test
     public void testSkullConfigChanges() {
         out.println("testSkullConfigChanges");
-        for (TexturedSkullType skullType : TexturedSkullType.values()) {
-                if(skullType==TexturedSkullType.PLAYER) continue;
+        for (InternalEggType skullType : InternalEggType.values()) {
                 String oldconfig = skullType.name().replace("_", "").toLowerCase() + "droprate";
                 if(Config.configKeys.get(oldconfig)==null){
                     fail("skull drop config entry mismatch: "+oldconfig+" -> "+skullType.getConfigName());
@@ -57,7 +54,7 @@ public class ConfigTest {
         File resource = new File(path+"/config.yml");
 
         config.load(resource);
-        for (TexturedSkullType skullType : TexturedSkullType.values()) {
+        for (InternalEggType skullType : InternalEggType.values()) {
             String conf_entry = skullType.getConfigName();
             Object value = config.get(conf_entry);
             if(value==null){

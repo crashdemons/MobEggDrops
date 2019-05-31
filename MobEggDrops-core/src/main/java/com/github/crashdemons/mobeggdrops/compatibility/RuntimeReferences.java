@@ -7,6 +7,7 @@ package com.github.crashdemons.mobeggdrops.compatibility;
 
 import java.lang.reflect.Method;
 import org.bukkit.Material;
+import org.bukkit.entity.EntityType;
 
 /**
  * Provides methods to perform runtime lookups of values by name (eg: enums)
@@ -14,9 +15,10 @@ import org.bukkit.Material;
  */
 public final class RuntimeReferences {
     private RuntimeReferences(){}
-    public static CompatibleSkullMaterial getCompatibleMaterialByName(String name){
+
+    public static EntityType getEntityTypeByName(String name){
         try{
-            return CompatibleSkullMaterial.valueOf(name);
+            return EntityType.valueOf(name);
         }catch(IllegalArgumentException e){
             return null;
         }
@@ -28,13 +30,7 @@ public final class RuntimeReferences {
             return null;
         }
     }
-    public static SkullType getSkullTypeByName(String name){
-        try{
-            return SkullType.valueOf(name);
-        }catch(IllegalArgumentException e){
-            return null;
-        }
-    }
+
     public static Class<?> getClass(String classname){
         try {
             return Class.forName(classname);

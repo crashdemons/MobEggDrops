@@ -10,7 +10,6 @@
     <!-- sub modules -->
     <modules>
         <module>MobEggDrops-api</module>
-        <module>MobEggDrops-craftbukkit-support</module>
         <module>MobEggDrops-core</module>
         <module>MobEggDrops-craftbukkit-1.14-support</module>
         <module>MobEggDrops-craftbukkit-1.13-support</module>

@@ -1,7 +1,7 @@
 name: MobEggDrops
 version: ${project.version}
-description: Drops a player's head when s/he dies, also mob heads
-authors: [meiskam, zand, crashdemons]
+description: Drops a mob's egg when they die
+authors: [crashdemons, meiskam, zand]
 
 api-version: 1.13
 
@@ -12,8 +12,8 @@ softdepend: [NoCheatPlus,BountyHunters]
 
 commands:
   MobEggDrops:
-    description: Spawn a playerhead or edit mobeggdrops config
-    aliases: ph
+    description: Spawn a mobegg or edit mobeggdrops config
+    aliases: med
 
 permissions:
   mobeggdrops.*:
@@ -23,13 +23,9 @@ permissions:
       mobeggdrops.config.*: true
       mobeggdrops.spawn.*: true
       mobeggdrops.update: true
-      mobeggdrops.rename: true
-      mobeggdrops.canbehead: true
-      mobeggdrops.canlosehead: true
-      mobeggdrops.canbeheadmob: true
+      mobeggdrops.canberewarded: true
       mobeggdrops.update: true
-      mobeggdrops.alwaysbehead: true
-      mobeggdrops.alwaysbeheadmob: true
+      mobeggdrops.alwaysrewarded: true
       mobeggdrops.clickinfo: true
   mobeggdrops.config.*:
     description: Allows user to edit, save, or reload configs
@@ -43,60 +39,30 @@ permissions:
   mobeggdrops.config.set:
     description: Allows user to set or reload configs
     default: op
-  mobeggdrops.rename.*:
-    description: Allows a user to rename any head in their hands to any other head
-    default: op
-    children:
-      mobeggdrops.rename: true
-      mobeggdrops.rename.mob: true
-      mobeggdrops.rename.player: true
-  mobeggdrops.rename:
-    description: Allows a user to rename any head in their hands to any other head
-    default: op
-    children:
-      mobeggdrops.rename.mob: true
-      mobeggdrops.rename.player: true
-  mobeggdrops.rename.mob:
-    description: User can rename mob-heads to other mob-heads
-    default: op
-  mobeggdrops.rename.player:
-    description: User can rename player-heads to other player-heads
-    default: op
   mobeggdrops.spawn.*:
-    description: Spawn player heads
+    description: Spawn player eggs
     default: op
     children:
       mobeggdrops.spawn: true
       mobeggdrops.spawn.forother: true
   mobeggdrops.spawn:
-    description: Spawn any player head
+    description: Spawn any player egg
     default: op
     children:
       mobeggdrops.spawn.own: true
   mobeggdrops.spawn.own:
-    description: Spawn your own head
+    description: Spawn your own egg
     default: op
   mobeggdrops.spawn.forother:
-    description: Spawn a head into someone elses inventory
+    description: Spawn a egg into someone elses inventory
     default: op
-  mobeggdrops.canbehead:
-    description: User can remove heads from others
-    default: true
-  mobeggdrops.canlosehead:
-    description: User can have their head removed
-    default: true
-  mobeggdrops.canbeheadmob:
-    description: User can remove heads from mobs
+  mobeggdrops.canberewarded:
+    description: User can receive egg drops
     default: true
   mobeggdrops.update:
     description: When update available, can view notice and manually update
     default: op
-  mobeggdrops.alwaysbehead:
-    description: Ignore drop rate for player heads and drop 100% of the time
+  mobeggdrops.alwaysrewarded:
+    description: Ignore drop rate for eggs and drop 100% of the time
     default: false
-  mobeggdrops.alwaysbeheadmob:
-    description: Ignore drop rate for mob heads and drop 100% of the time
-    default: false
-  mobeggdrops.clickinfo:
-    description: When a player head is clicked the player name will be displayed
-    default: false
+
