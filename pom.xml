@@ -1,31 +1,31 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.shininet.bukkit</groupId>
-    <artifactId>PlayerHeads</artifactId>
+    <groupId>com.github.crashdemons</groupId>
+    <artifactId>MobEggDrops</artifactId>
     <packaging>pom</packaging>
     <version>5.0.0-SNAPSHOT</version>
-    <name>PlayerHeads</name>
-    
+    <name>MobEggDrops</name>
+
     <!-- sub modules -->
     <modules>
-        <module>PlayerHeads-api</module>
-        <module>PlayerHeads-craftbukkit-support</module>
-        <module>PlayerHeads-legacy-support</module>
-        <module>PlayerHeads-core</module>
-        <module>PlayerHeads-craftbukkit-1.14-support</module>
-        <module>PlayerHeads-craftbukkit-1.13-support</module>
-        <module>PlayerHeads-craftbukkit-1.8-support</module>
-        <module>PlayerHeads-glowstone-1.12-support</module>
-        <module>PlayerHeads-crossversion-plugin</module>
+        <module>MobEggDrops-api</module>
+        <module>MobEggDrops-craftbukkit-support</module>
+        <module>MobEggDrops-legacy-support</module>
+        <module>MobEggDrops-core</module>
+        <module>MobEggDrops-craftbukkit-1.14-support</module>
+        <module>MobEggDrops-craftbukkit-1.13-support</module>
+        <module>MobEggDrops-craftbukkit-1.8-support</module>
+        <module>MobEggDrops-glowstone-1.12-support</module>
+        <module>MobEggDrops-crossversion-plugin</module>
     </modules>
-    
+
 
     <organization>
-        <name>ShiniNet</name>
-        <url>http://www.shininet.org</url>
+        <name>crashdemons</name>
+        <url>http://github.com/crashdemons</url>
     </organization>
-    
+
     <licenses>
         <license>
             <name>Mozilla Public License 2.0</name>
@@ -39,14 +39,14 @@
     </properties>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:crashdemons/PlayerHeads.git</developerConnection>
-        <connection>scm:git:git://github.com/crashdemons/PlayerHeads.git</connection>
-        <url>https://github.com/crashdemons/PlayerHeads/tree/master/</url>
+        <developerConnection>scm:git:git@github.com:crashdemons/MobEggDrops.git</developerConnection>
+        <connection>scm:git:git://github.com/crashdemons/MobEggDrops.git</connection>
+        <url>https://github.com/crashdemons/MobEggDrops/tree/master/</url>
     </scm>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/crashdemons/PlayerHeads/issues</url>
+        <url>https://github.com/crashdemons/MobEggDrops/issues</url>
     </issueManagement>
 
 </project>
