@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="6.18">
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\playerheads\api\HeadType.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\api\HeadType.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\playerheads\api\package-info.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\api\package-info.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\playerheads\api\PlayerHeads.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\api\PlayerHeads.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\playerheads\api\PlayerHeadsAPI.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\api\PlayerHeadsAPI.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\playerheads\compatibility\package-info.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\compatibility\plugins\SimulatedBlockBreakEvent.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\playerheads\compatibility\plugins\package-info.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\compatibility\SkullDetails.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\playerheads\compatibility\plugins\SimulatedBlockBreakEvent.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\events\BlockDropHeadEvent.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\playerheads\compatibility\SkullDetails.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\events\DropHeadEvent.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\org\shininet\bukkit\playerheads\events\BlockDropHeadEvent.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\events\FakeBlockBreakEvent.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\org\shininet\bukkit\playerheads\events\DropHeadEvent.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\events\HeadRollEvent.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\org\shininet\bukkit\playerheads\events\FakeBlockBreakEvent.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\events\LivingEntityDropHeadEvent.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\org\shininet\bukkit\playerheads\events\HeadRollEvent.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\events\MobDropHeadEvent.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\org\shininet\bukkit\playerheads\events\LivingEntityDropHeadEvent.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\events\PlayerDropHeadEvent.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\org\shininet\bukkit\playerheads\events\MobDropHeadEvent.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\MobEggDropsPlugin.java">
 </file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\org\shininet\bukkit\playerheads\events\package-info.java">
-</file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\org\shininet\bukkit\playerheads\events\PlayerDropHeadEvent.java">
-</file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\org\shininet\bukkit\playerheads\package-info.java">
-</file>
-<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\org\shininet\bukkit\playerheads\PlayerHeadsPlugin.java">
+<file name="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\src\main\java\com\github\crashdemons\mobeggdrops\package-info.java">
 </file>
 </checkstyle>
