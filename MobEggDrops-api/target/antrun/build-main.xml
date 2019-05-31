@@ -2,10 +2,10 @@
 <project name="maven-antrun-" default="main"  >
 <target name="main">
   <delete includeEmptyDirs="true" failonerror="false">
-    <fileset includes="**/*" dir="C:\Users\crash\Documents\NetBeansProjects\PlayerHeads-main\PlayerHeads-api/docs"/>
+    <fileset includes="**/*" dir="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api/docs"/>
   </delete>
-  <copy todir="C:\Users\crash\Documents\NetBeansProjects\PlayerHeads-main\PlayerHeads-api/docs">
-    <fileset includes="**/*" dir="C:\Users\crash\Documents\NetBeansProjects\PlayerHeads-main\PlayerHeads-api\target/apidocs"/>
+  <copy todir="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api/docs">
+    <fileset includes="**/*" dir="C:\Users\crash\Documents\NetBeansProjects\MobEggDrops\MobEggDrops-api\target/apidocs"/>
   </copy>
 </target>
 </project>
