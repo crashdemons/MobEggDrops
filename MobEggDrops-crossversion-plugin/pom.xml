@@ -229,15 +229,15 @@
                         <configuration>
                             <artifactSet>
                                 <includes>
-                                    <include>com.github.crashdemons.MobEggDrops:MobEggDrops-api:jar:</include>
-                                    <include>com.github.crashdemons.MobEggDrops:MobEggDrops-core:jar:</include>
-                                    <include>com.github.crashdemons.MobEggDrops:MobEggDrops-craftbukkit-1.14-support:jar:</include>
-                                    <include>com.github.crashdemons.MobEggDrops:MobEggDrops-craftbukkit-1.13-support:jar:</include>
+                                    <include>com.github.crashdemons:MobEggDrops-api:jar:</include>
+                                    <include>com.github.crashdemons:MobEggDrops-core:jar:</include>
+                                    <include>com.github.crashdemons:MobEggDrops-craftbukkit-1.14-support:jar:</include>
+                                    <include>com.github.crashdemons:MobEggDrops-craftbukkit-1.13-support:jar:</include>
                                 </includes>
                             </artifactSet>
                             <filters>
                               <filter>
-                                <artifact>com.github.crashdemons.MobEggDrops:MobEggDrops-core:jar:</artifact>
+                                <artifact>com.github.crashdemons:MobEggDrops-core:jar:</artifact>
                                 <excludes>
                                   <exclude>com/github/crashdemons/mobeggdrops/compatibility/CompatibilitySupport*</exclude>
                                 </excludes>

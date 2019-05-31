@@ -5,7 +5,7 @@ authors: [crashdemons, meiskam, zand]
 
 api-version: 1.13
 
-main: com.github.crashdemons.mobeggdrops.MobEggDrops
+main: org.shininet.bukkit.mobeggdrops.MobEggDrops
 database: false
 
 softdepend: [NoCheatPlus,BountyHunters]
