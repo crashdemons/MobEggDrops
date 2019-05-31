@@ -87,7 +87,7 @@ public final class PlayerHeads extends JavaPlugin implements Listener,MobEggDrop
     public PlayerHeads(){
         super();
         api=new ApiProvider(this);
-        com.github.crashdemons.mobeggdrops.api.PlayerHeads.setApiInstance(api);
+        com.github.crashdemons.mobeggdrops.api.MobEggDrops.setApiInstance(api);
         //hasBlockDropItemSupport = RuntimeReferences.hasClass("org.bukkit.event.block.BlockDropItemEvent");
         
     }

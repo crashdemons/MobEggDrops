@@ -5,7 +5,6 @@
  */
 package com.github.crashdemons.mobeggdrops.api;
 
-import com.github.crashdemons.mobeggdrops.api.PlayerHeadsAPI;
 import com.github.crashdemons.mobeggdrops.api.HeadType;
 import com.github.crashdemons.mobeggdrops.SkullConverter;
 import com.github.crashdemons.mobeggdrops.SkullManager;
@@ -17,13 +16,14 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.shininet.bukkit.mobeggdrops.PlayerHeads;
 import com.github.crashdemons.mobeggdrops.MobEggDropsPlugin;
+import com.github.crashdemons.mobeggdrops.api.MobEggDropsAPI;
 
 /**
  * Implements the API by wrapping internal methods
  *
  * @author crashdemons (crashenator at gmail.com)
  */
-public class ApiProvider implements PlayerHeadsAPI {
+public class ApiProvider implements MobEggDropsAPI {
 
     private final PlayerHeads plugin;
 

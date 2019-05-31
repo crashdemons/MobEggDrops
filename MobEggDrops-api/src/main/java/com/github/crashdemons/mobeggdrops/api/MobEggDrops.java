@@ -10,9 +10,9 @@ package com.github.crashdemons.mobeggdrops.api;
  *
  * @author crashdemons (crashenator at gmail.com)
  */
-public final class PlayerHeads {
-    private PlayerHeads(){}
-    private static PlayerHeadsAPI apiInstance = null;
+public final class MobEggDrops {
+    private MobEggDrops(){}
+    private static MobEggDropsAPI apiInstance = null;
 
     /**
      * Gets the instance of the PlayerHeads API
@@ -20,7 +20,7 @@ public final class PlayerHeads {
      * @return the PlayerHeads API instance, or null if the plugin is not
      * available or you accidentally shaded the API into your plugin.
      */
-    public static PlayerHeadsAPI getApiInstance() {
+    public static MobEggDropsAPI getApiInstance() {
         return apiInstance;
     }
 
@@ -33,8 +33,8 @@ public final class PlayerHeads {
      * @deprecated This method is intended only for internal PlayerHeads use.
      */
     @Deprecated
-    public static void setApiInstance(final PlayerHeadsAPI api) {
-        PlayerHeads.apiInstance = api;
+    public static void setApiInstance(final MobEggDropsAPI api) {
+        MobEggDrops.apiInstance = api;
     }
 
 }

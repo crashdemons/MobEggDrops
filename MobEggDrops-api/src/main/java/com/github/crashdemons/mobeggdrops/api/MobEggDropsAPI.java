@@ -19,7 +19,7 @@ import com.github.crashdemons.mobeggdrops.MobEggDropsPlugin;
  *
  * @author crashdemons (crashenator at gmail.com)
  */
-public interface PlayerHeadsAPI {
+public interface MobEggDropsAPI {
 
     /**
      * Get the main PlayerHeads Plugin instance
