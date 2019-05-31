@@ -6,7 +6,6 @@
 package com.github.crashdemons.mobeggdrops.api;
 
 import org.jetbrains.annotations.Nullable;
-import org.bukkit.block.BlockState;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.inventory.ItemStack;
@@ -38,31 +37,13 @@ public interface MobEggDropsAPI {
     public String getVersion();
 
     /**
-     * Gets the type of head associated with an itemstack.
-     *
-     * @param s the itemstack to check
-     * @return the type of head, or null if there is none
-     */
-    @Nullable
-    public HeadType getHeadFrom(ItemStack s);
-
-    /**
-     * Gets the type of head associated with the Block
-     *
-     * @param s the blockstate to check
-     * @return the type of head, or null if the block wasn't a head.
-     */
-    @Nullable
-    public HeadType getHeadFrom(BlockState s);
-
-    /**
      * Gets the type of head associated with an entity
      *
      * @param e the entity to check
      * @return the type of head, or null if there is no viable head.
      */
     @Nullable
-    public HeadType getHeadOf(Entity e);
+    public EggType getEggOf(Entity e);
 
     /**
      * Gets the type of head associated with an entity-type. See deprecation
@@ -74,12 +55,12 @@ public interface MobEggDropsAPI {
      * entity-type. Using this method will introduce version-dependent behavior
      * (For example: this may not be able to tell a stray from a skeleton in
      * certain server versions) and should be avoided by using
-     * getHeadFrom(Entity) instead.
-     * @see #getHeadDrop(org.bukkit.entity.Entity)
+     * getEggFrom(Entity) instead.
+     * @see #getEggDrop(org.bukkit.entity.Entity)
      * @return the type of head, or null if there is no viable head.
      */
     @Nullable
-    public HeadType getHeadOf(EntityType t);
+    public EggType getEggOf(EntityType t);
 
     /**
      * Gets a stack of head items for the given type and amount. Note:
@@ -91,7 +72,7 @@ public interface MobEggDropsAPI {
      * @return The item stack
      */
     @NotNull
-    public ItemStack getHeadItem(HeadType h, int num);
+    public ItemStack getEggItem(EggType h, int num);
 
     /**
      * Gets a stack of head items as they would normally be dropped from the
@@ -101,5 +82,5 @@ public interface MobEggDropsAPI {
      * @param e the entity to create items from
      * @return The item stack
      */
-    public ItemStack getHeadDrop(Entity e);
+    public ItemStack getEggDrop(Entity e);
 }

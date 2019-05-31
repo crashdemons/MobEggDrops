@@ -13,7 +13,7 @@ import org.bukkit.inventory.ItemStack;
  *
  * @author meiskam
  */
-public class MobDropHeadEvent extends LivingEntityDropHeadEvent {
+public class MobDropEggEvent extends LivingEntityDropEggEvent {
 
     /**
      * Constructs the event
@@ -21,7 +21,7 @@ public class MobDropHeadEvent extends LivingEntityDropHeadEvent {
      * @param mob the mob that was beheaded
      * @param drop the head item to be dropped.
      */
-    public MobDropHeadEvent(final LivingEntity mob, final ItemStack drop) {
+    public MobDropEggEvent(final LivingEntity mob, final ItemStack drop) {
         super(mob, drop);
     }
 }

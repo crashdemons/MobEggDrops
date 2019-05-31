@@ -1,24 +1,28 @@
-/*
- *  This Source Code Form is subject to the terms of the Mozilla Public
- *  License, v. 2.0. If a copy of the MPL was not distributed with this
- *  file, You can obtain one at http://mozilla.org/MPL/2.0/ .
- */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package com.github.crashdemons.mobeggdrops.events;
 
-import org.bukkit.block.Block;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;
-import org.bukkit.event.block.BlockEvent;
+import org.bukkit.event.entity.EntityEvent;
 import org.bukkit.inventory.ItemStack;
 
 /**
- * Event created by the PlayerHeads plugin when a block is broken by hand
- * (mined) and dropping a head. Note: does not occur when broken by water or
- * pistons.
+ * Event created by the PlayerHeads plugin when a [living] entity is beheaded.
  *
- * @author crashdemons (crashenator at gmail.com)
+ * This class will usually be instanced as either MobDropHeadEvent (for mobs) or
+ * PlayerDropHeadEvent (for a Player).
+ *
+ * Cancellable.
+ *
+ * <i>Note:</i> Some of this documentation was inferred after the fact and may
+ * be inaccurate.
+ *
+ * @author meiskam
  */
-public class BlockDropHeadEvent extends BlockEvent implements Cancellable, DropHeadEvent {
+public class LivingEntityDropEggEvent extends EntityEvent implements Cancellable, DropEggEvent {
 
     private static final HandlerList HANDLERS = new HandlerList();
     private boolean canceled = false;
@@ -27,11 +31,11 @@ public class BlockDropHeadEvent extends BlockEvent implements Cancellable, DropH
     /**
      * Construct the event
      *
-     * @param block the block dropping the head
+     * @param entity the [living] entity droping the head
      * @param drop the head item being dropped
      */
-    public BlockDropHeadEvent(final Block block, final ItemStack drop) {
-        super(block);
+    LivingEntityDropEggEvent(final LivingEntity entity, final ItemStack drop) {
+        super(entity);
         this.itemDrop = drop;
     }
 
@@ -45,6 +49,16 @@ public class BlockDropHeadEvent extends BlockEvent implements Cancellable, DropH
     @Override
     public ItemStack getDrop() {
         return itemDrop;
+    }
+
+    /**
+     * Gets the entity that was beheaded
+     *
+     * @return the beheaded entity
+     */
+    @Override
+    public LivingEntity getEntity() {
+        return (LivingEntity) entity;
     }
 
     /**

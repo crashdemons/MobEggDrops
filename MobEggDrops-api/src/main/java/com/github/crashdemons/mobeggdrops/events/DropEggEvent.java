@@ -12,7 +12,7 @@ import org.bukkit.inventory.ItemStack;
  *
  * @author crashdemons (crashenator at gmail.com)
  */
-public interface DropHeadEvent {
+public interface DropEggEvent {
 
     public ItemStack getDrop();
 }

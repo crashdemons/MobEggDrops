@@ -19,7 +19,7 @@ import org.bukkit.event.HandlerList;
  *
  * @author crashdemons (crashenator at gmail.com)
  */
-public class HeadRollEvent extends Event {
+public class EggRollEvent extends Event {
 
     private static final HandlerList HANDLERS = new HandlerList();
 
@@ -56,7 +56,7 @@ public class HeadRollEvent extends Event {
      * @param dropSuccess whether the droproll was determined to be initially a
      * successful roll.
      */
-    public HeadRollEvent(final Entity killer, final Entity target, final boolean killerAlwaysBeheads, final double lootingModifier, final double originalDropRoll, final double effectiveDropRoll, final double originalDropRate, final double effectiveDropRate, final boolean dropSuccess) {
+    public EggRollEvent(final Entity killer, final Entity target, final boolean killerAlwaysBeheads, final double lootingModifier, final double originalDropRoll, final double effectiveDropRoll, final double originalDropRate, final double effectiveDropRate, final boolean dropSuccess) {
         this.evtlootingModifier = lootingModifier;
         this.originalDropRate = originalDropRate;
         this.effectiveDropRate = effectiveDropRate;
